@@ -74,27 +74,19 @@ let us dive deep into our motivation, to understand the underlying research prob
 
 ---
 
-# Why Do We Need Display Calibration?
+# Displays are ubiquitous in our life
 
-<v-click>
 
-- Displays are ubiquitous in our life
-
-</v-click>
-
-<br>
-
-<div v-click="['2']" class="absolute flex justify-center gap-8 mt-6 left-35" v-motion
-  :initial="{ x: -50 }"
-  :enter="{ x: 0 }"
-  :leave="{ x: 50 }">
-  <div>
+<div class="absolute grid grid-cols-2 gap-2 mt-2 left-40">
+  <div v-click="1" v-motion
+    :initial="{ opacity: 0, x: -30 }"
+    :enter="{ opacity: 1, x: 0 }">
     <div class="bg-white p-2 rounded-lg shadow-lg">
       <img src="/Laptop_computer_monitor_(Unsplash).jpg" 
           alt="sensor" 
-          class="w-80 h-60 object-cover block">
+          class="w-80 h-35 object-cover block">
     </div>
-    <div class="text-center mt-2">
+    <div class="text-center mt-1">
       Computer
       <p class="text-[0.55em] text-gray-500 mt-2" style="margin: 0;">
         <a href="https://commons.wikimedia.org/wiki/File:Laptop_computer_monitor_(Unsplash).jpg">Taduuda taduuda</a>, CC0, via Wikimedia Commons
@@ -102,32 +94,31 @@ let us dive deep into our motivation, to understand the underlying research prob
     </div>
   </div>
 
-  <div>
-      <div class="bg-white p-2 rounded-lg shadow-lg">
-        <img src="/OpenStreetMap-on-Iphone15Plus.jpg" 
-            alt="sensor" 
-            class="w-80 h-60 object-cover block">
-      </div>
-      <div class="text-center mt-2">
-        Smart phone
-        <p class="text-[0.55em] text-gray-500 mt-2" style="margin: 0;">
-          <a href="https://commons.wikimedia.org/wiki/File:OpenStreetMap-on-Iphone15Plus.jpg">Infinite Bed</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
-        </p>
-      </div>
+  <div v-click="2" v-motion
+    :initial="{ opacity: 0, x: -30 }"
+    :enter="{ opacity: 1, x: 0 }">
+    <div class="bg-white p-2 rounded-lg shadow-lg">
+      <img src="/OpenStreetMap-on-Iphone15Plus.jpg" 
+          alt="sensor" 
+          class="w-80 h-35 object-cover block">
+    </div>
+    <div class="text-center mt-1">
+      Smart phone
+      <p class="text-[0.55em] text-gray-500 mt-2" style="margin: 0;">
+        <a href="https://commons.wikimedia.org/wiki/File:OpenStreetMap-on-Iphone15Plus.jpg">Infinite Bed</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
+      </p>
+    </div>
   </div>
-</div>
 
-<div v-click="3" class="absolute flex justify-center gap-8 mt-6 left-35" v-motion
-  :initial="{ x: -50 }"
-  :enter="{ x: 0 }"
-  :leave="{ x: 50 }">
-  <div>
+  <div v-click="3" v-motion
+    :initial="{ opacity: 0, x: -30 }"
+    :enter="{ opacity: 1, x: 0 }">
     <div class="bg-white p-2 rounded-lg shadow-lg">
       <img src="/Apple_Vision_Pro_on_display_in_Toronto,_Canada_-_Aug_2024.jpg" 
           alt="sensor" 
-          class="w-80 h-60 object-cover block">
+          class="w-80 h-35 object-cover block">
     </div>
-    <div class="text-center mt-2">
+    <div class="text-center mt-1">
       Video-see-through AR headset
       <p class="text-[0.55em] text-gray-500 mt-2" style="margin: 0;">
         <a href="https://commons.wikimedia.org/wiki/File:Apple_Vision_Pro_on_display_in_Toronto,_Canada_-_Aug_2024.jpg">LR.127</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>, via Wikimedia Commons
@@ -135,18 +126,20 @@ let us dive deep into our motivation, to understand the underlying research prob
     </div>
   </div>
 
-  <div>
-      <div class="bg-white p-2 rounded-lg shadow-lg">
-        <img src="/2CR_Soldiers_use_virtual_reality_for_Counter-Unmanned_Aerial_Systems_Training_(8867750).jpg" 
-            alt="sensor" 
-            class="w-80 h-60 object-cover block">
-      </div>
-      <div class="text-center mt-2">
-        VR headset
-        <p class="text-[0.55em] text-gray-500 mt-2" style="margin: 0;">
-          <a href="https://commons.wikimedia.org/wiki/File:2CR_Soldiers_use_virtual_reality_for_Counter-Unmanned_Aerial_Systems_Training_(8867750).jpg">U.S. Army photo by Pfc. Brent Lee</a>, Public domain, via Wikimedia Commons
-        </p>
-      </div>
+  <div v-click="4" v-motion
+    :initial="{ opacity: 0, x: -30 }"
+    :enter="{ opacity: 1, x: 0 }">
+    <div class="bg-white p-2 rounded-lg shadow-lg">
+      <img src="/2CR_Soldiers_use_virtual_reality_for_Counter-Unmanned_Aerial_Systems_Training_(8867750).jpg" 
+          alt="sensor" 
+          class="w-80 h-35 object-cover block">
+    </div>
+    <div class="text-center mt-1">
+      VR headset
+      <p class="text-[0.55em] text-gray-500 mt-2" style="margin: 0;">
+        <a href="https://commons.wikimedia.org/wiki/File:2CR_Soldiers_use_virtual_reality_for_Counter-Unmanned_Aerial_Systems_Training_(8867750).jpg">U.S. Army photo by Pfc. Brent Lee</a>, Public domain, via Wikimedia Commons
+      </p>
+    </div>
   </div>
 </div>
 
@@ -155,18 +148,19 @@ let us dive deep into our motivation, to understand the underlying research prob
 </div>
 
 <!--
-👆Displays are everywhere in our daily life, from 👆 computers to smart phones. In recent years, we are also exposed to the virtual imagery with rise of 👆 both AR and VR headsets👆
+👆Displays are everywhere in our daily life, from 👆 computers to 👆 smart phones. In recent years, we are also exposed to the virtual imagery with rise of 👆 both AR and 👆 VR headsets
+
+We want a perfect image shown on these displays 👆
 -->
 
 ---
 
-# Why Do We Need Display Calibration?
+<v-click>
+<span class="text-[2.5em] text-red-500">But, </span>
+</v-click>
 
 <v-click>
-<span class="text-[2em] text-red-500">But,</span>
-</v-click>
-<v-click>
-displays often suffer from defects such as:
+<span class="text-2xl">displays often suffer from defects such as:</span>
 </v-click>
 
 <br>
@@ -176,7 +170,7 @@ displays often suffer from defects such as:
   v-motion
   :initial="{ x: -50 }"
   :enter="{ x: 250 }"
-  :click-4="{ x: -1 }"
+  :click-4="{ x: 25 }"
   class="absolute ">
   <div>
       <div class="bg-white p-2 rounded-lg shadow-lg">
@@ -192,7 +186,7 @@ displays often suffer from defects such as:
 
 <div v-click=5
   v-motion
-  :initial="{ x: -1}"
+  :initial="{ x: 25}"
   class="absolute">
   <div>
       <div class="bg-white p-2 rounded-lg shadow-lg">
@@ -206,7 +200,7 @@ displays often suffer from defects such as:
   </div>
 </div>
 
-<div v-click=5 v-motion
+<div v-click=6 v-motion
   :initial="{ x: -50 }"
   :enter="{ x: 0 }"
   :leave="{ x: 50 }" 
@@ -228,15 +222,14 @@ displays often suffer from defects such as:
 </div>
 
 <!--
-However in these displays👆, not every pixel is equal👆 for example 👆 when I display a full black image with the liquid crystal display in our lab, you can see it does not produce an uniform black pattern 👆 if we zoom-in the image 👆 we can see that the light leaks from the edges. This is usually referred as backlight bleeding
+but 👆 not every pixel is equal👆 for example 👆 when I display a full black image with the liquid crystal display in our lab, you can see it does not produce an uniform black pattern 👆 if we zoom-in the image 👆👆 we can see that the light leaks from the edges. This is usually referred as backlight bleeding
 -->
 
 ---
 
-# Why Do We Need Display Calibration?
-
 <v-click>
-Displays also suffer from color inconsistency
+<p class="text-2xl">Displays also suffer from color inconsistency
+</p>
 </v-click>
 
 <br>
@@ -297,21 +290,90 @@ Displays also suffer from color inconsistency
 </div>
 
 <!--
-Despite the non uniform intensities,👆 displays also suffer from color inconsistency👆 Now, I turn on two displays in our lab👆 showing the identical color pattern on both displays 👆 As you can see the color varies dramatically from display to display.👆
+👆 Despite the non uniform intensities,👆 displays also suffer from color inconsistency👆 Now, I turn on two displays in our lab👆 showing the identical color pattern on both displays 👆 As you can see the color varies dramatically from display to display.👆
 -->
 
 ---
 
-# Why Do We Need Display Calibration?
+<div class="relative">
 
-<v-click>
-Another common display defects comes with the geometric viewing positions
-</v-click>
+  <!-- FIRST TEXT (step 1) -->
+  <span v-click="[1]" class="absolute top-0 left-0 text-2xl">
+    These defects are visible at a 
+    <span class="text-red-500">fixed viewing angle ❌</span>
+  </span>
+
+  <!-- SECOND TEXT (step 2) — SAME POSITION -->
+  <span v-click="2" class="absolute top-0 left-0 text-2xl">
+    These defects could be mitigated by the colorimeter:
+  </span>
+
+</div>
+
+<div v-click="[1, 2]" class="absolute grid grid-cols-2 gap-2 mt-2 left-10 top-30">
+  <div>
+      <div class="bg-white p-2 rounded-lg shadow-lg">
+        <img src="/backlight_bleeding_boxes.png" 
+            alt="sensor" 
+            class="h-80 w-auto object-cover block">
+      </div>
+      <div class="text-center mt-2">
+        Backlight bleeding
+      </div>
+  </div>
+
+  <div>
+      <div class="bg-white p-2 rounded-lg shadow-lg">
+        <img src="/discoloration_boxes.png" 
+            alt="sensor" 
+            class="h-80 w-auto object-cover block">
+      </div>
+      <div class="text-center mt-2">
+        Discoloration
+      </div>
+  </div>
+</div>
+
+<div v-click=2 class="absolute right-5 top-0">
+  <span class="text-red-500 " style="font-size: 25px;">❌ Fixed viewing position only</span>
+</div>
+
+<div v-click="2" class="flex justify-center items-center mt-2 h-full">
+  <div v-click="1" v-motion
+  :initial="{ x: 50 }"
+  :enter="{ x: 0 }"
+  :leave="{ x: 50 }">
+  <br>
+  <br>
+    <div class="bg-white p-2 rounded-lg shadow-lg">
+      <img src="/Monitor_Calibration_2010-by-RaBoe-20.jpg" 
+          alt="sensor" 
+          class="w-auto h-80 object-cover block">
+    </div>
+    <div class="text-center mt-2">
+      Colorimeter
+      <p class="text-[0.55em] text-gray-500 mt-2" style="margin: 0;">
+        <a href="https://commons.wikimedia.org/wiki/File:Monitor_Calibration_2010-by-RaBoe-20.jpg">Ra Boe / Wikipedia</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/de/deed.en">CC BY-SA 3.0 DE</a>, via Wikimedia Commons
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- 
+Despite the display intrinsic deficiencies, 
+ -->
+
+---
+
+<span class="relative top-0 left-0 text-2xl">
+  The geometric viewing positions affects the percieved quality as well
+</span>
 
 <br>
 <br>
 
-<div class="absolute left-40" v-click="[2,3]" >
+<div class="absolute left-40" v-click="[1,2]" >
   <div class="bg-white p-2 rounded-lg shadow-lg">
     <video controls autoplay muted loop playsinline style="width: 650px;"  >
       <source src="/rotational_display.mp4" type="video/mp4">
@@ -319,7 +381,7 @@ Another common display defects comes with the geometric viewing positions
   </div>
 </div>
 
-<div class="absolute left-40" v-click=3 >
+<div class="absolute left-40" v-click=2 >
   <div class="bg-white p-2 rounded-lg shadow-lg">
   <video controls autoplay muted loop playsinline style="width: 650px;"  >
     <source src="/depth_display.mp4" type="video/mp4">
@@ -333,15 +395,15 @@ Another common display defects comes with the geometric viewing positions
 </div>
 
 <!--
-Another common display defect comes with the geometric viewing positions 👆 This could either due to rotations or 👆 changing position in depth 👆
+Another factor is the geometric viewing positions 👆 This could either due to rotations or 👆 changing position in depth 👆
 -->
 
 ---
 
-# Why Do We Need Display Calibration?
-
 <v-click>
-These defects happen to near-eye display as well
+  <span class="relative top-0 left-0 text-2xl">
+  These defects happen to near-eye display as well
+  </span> 
 </v-click>
 
 <br>
@@ -365,61 +427,18 @@ These view-dependent distortions happen to near-eye displays as well. 👆Here i
 
 ---
 
-# Motivation
-
 
 <v-click>
-So far we have covered three types of display defects:
+  <span class="relative top-0 left-0 text-2xl">
+    The capability to capture defects with different geometric viewing position is important for:
+  </span>
 </v-click>
 
 <br>
-
-<div class="relative">
-  <div v-click="[2,7]">
-
-  - Intensity non-uniformity
-
-  </div>
-  <div v-click="7" class="absolute top-0 left-0">
-
-  - **Intensity non-uniformity**
-
-  </div>
-</div>
-
-<div class="relative">
-  <div v-click="[3,7]">
-
-  - Color inconsistency
-
-  </div>
-  <div v-click="7" class="absolute top-0 left-0">
-
-  - **Color inconsistency**
-  </div>
-</div>
-
-
-<div v-click="4">
-
-
-</div>
-<div class="relative">
-  <div v-click="[4,7]">
-
-  - Viewing-angle dependent distortion
-
-
-  </div>
-  <div v-click="7" class="absolute top-0 left-0">
-  
-  - <span class="text-gray-800">Viewing-angle dependent distortion</span>
-
-  </div>
-</div>
+<br>
 
 <div class="absolute flex justify-center gap-8 mt-2 left-35" >
-  <div v-click="[5,7]" v-motion
+  <div v-click="1" v-motion
   :initial="{ x: -50 }"
   :enter="{ x: 0 }"
   :leave="{ x: 50 }">
@@ -436,7 +455,7 @@ So far we have covered three types of display defects:
     </div>
   </div>
 
-  <div v-click="[6, ]" v-motion
+  <div v-click="2" v-motion
   :initial="{ x: -50 }"
   :enter="{ x: 0 }"
   :leave="{ x: 50 }">
@@ -454,30 +473,6 @@ So far we have covered three types of display defects:
   </div>
 </div>
 
-<div class=" flex justify-center gap-8 mt-2 " >
-  <div v-click="8" v-motion
-  :initial="{ x: 50 }"
-  :enter="{ x: 0 }"
-  :leave="{ x: 50 }">
-    <div class="bg-white p-2 rounded-lg shadow-lg">
-      <img src="/Monitor_Calibration_2010-by-RaBoe-20.jpg" 
-          alt="sensor" 
-          class="w-80 h-60 object-cover block">
-    </div>
-    <div class="text-center mt-2">
-      Colorimeter
-      <p class="text-[0.55em] text-gray-500 mt-2" style="margin: 0;">
-        <a href="https://commons.wikimedia.org/wiki/File:Monitor_Calibration_2010-by-RaBoe-20.jpg">Ra Boe / Wikipedia</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/de/deed.en">CC BY-SA 3.0 DE</a>, via Wikimedia Commons
-      </p>
-    </div>
-  </div>
-</div>
-
-<div v-click=9 class="absolute right-15 top-10">
-
-<span class="text-red-500 " style="font-size: 30px;">❌ Fixed viewing position only</span>
-
-</div>
 
 
 <div class="absolute bottom-4 right-6 text-sm text-gray-400">
@@ -485,27 +480,19 @@ So far we have covered three types of display defects:
 </div>
 
 <!-- 
-👆 So far we have covered three types of display defects including: 👆 intensity non-uniformity, 👆 color inconsistency, 👆 and viewing-angle dependent distortion.
-
-For content creators such as graphic designers 👆 and video editors 👆, having a properly calibrated display with accurate color and intensity is essential, as they need to ensure a consistent and reliable visual experience across different devices and viewing environments.
-
-The first two defects 👆 are well resolved by a device called colorimeter 👆 However it only assumed a fixed viewing positions 👆 leading to invalid assessments for other viewing positions.
-
+👆The capability to capture viewing-angle dependent distortion is critical for content creators such as graphic designers 👆 and video editors 👆, having a properly calibrated display with accurate color and intensity is essential, as they need to ensure a consistent and reliable visual experience across different devices and viewing environments.
 -->
 
 
 
 ---
 
-# Motivation
-
-
 <v-clicks>
 
 <div> 
-  <br>
-  ISO standard defines procedures to assess the uniformity distribution of Flat Panel Displays (FPD)
-
+  <span class="relative top-0 left-0 text-2xl">
+    ISO standard defines procedures to assess the uniformity distribution of Flat Panel Displays (FPD)
+  </span>
 </div>
 
 Which requires:
@@ -532,8 +519,6 @@ Which requires:
 transition: none
 ---
 
-# Motivation
-
 <br>
 
 <div class="absolute left-40" >
@@ -556,8 +541,6 @@ Here’s a time-lapse of me capturing the display’s angular intensity distribu
 -->
 
 ---
-
-# Motivation
 
 <br>
 
@@ -1457,81 +1440,6 @@ We can also simulate the pixels at close viewpoints
 </div>
 <!-- 
 👆 We can also simulate a close up view of the display.
--->
----
-
-# Results
-
-<v-click>
-The novel pixels pixels with different incident angles show similar radial pattern with the professional equipment result
-</v-click>
-
-<br>
-
-<div v-click="[2, 4]"
-  v-motion
-  :initial="{ x: -50 }"
-  :enter="{ x: 250 }"
-  :click-3="{ x: -1 }"
-  class="absolute ">
-  <div>
-      <div class="bg-white p-2 rounded-lg shadow-lg">
-        <img src="/interpolation_w_heatmap.png" 
-            alt="sensor" 
-            class="h-80 w-auto object-cover block">
-      </div>
-      <div class="text-center mt-2">
-        The interpolation intensities
-      </div>
-  </div>
-</div>
-
-<div v-click=4 class="absolute" v-motion
-  :initial="{ x: 10 }"
-  :enter="{ x: 380 }"
-  :leave="{ x: 50 }"
-  >
-  <div>
-      <div class="bg-white p-2 rounded-lg shadow-lg">
-        <img src="https://sensing.konicaminolta.asia/wp-content/uploads/2023/11/Radiant-Conoscope-Lens-system-Cartesian-Coordinates.webp" 
-            alt="sensor" 
-            class="h-70 w-auto object-cover block">
-      </div>
-      <div class="text-[0.55em] text-gray-500 mt-2" style="margin: 0;">
-      Used for commentary/educational purposes; all rights belong to the copyright holder.
-      <a href="https://sensing.konicaminolta.asia/fast-and-accurate-way-to-measure-viewing-angle-performance-of-display/" target="_blank" rel="noopener noreferrer">Konica Minolta</a>.
-      </div>
-  </div>
-</div>
-
-
-<div v-click="4"
-  v-motion
-  :enter="{ x: 10 }"
-  :initial="{ x: 40 }"
-  :leave="{ x: 50 }"
-  class="absolute bottom-100px">
-  <div>
-      <div class="bg-white p-2 rounded-lg shadow-lg">
-        <img src="/interpolation_w_heatmap.png" 
-            alt="sensor" 
-            class="h-50 w-auto object-cover block">
-      </div>
-      <div class="text-center mt-2">
-        The interpolation intensities
-      </div>
-  </div>
-</div>
-
-
-<div class="absolute bottom-4 right-6 text-sm text-gray-400">
-  <SlideCurrentNo /> / <SlidesTotal />
-</div>
-
-<!--
-👆 We evaluate pixel consistency by checking how well the reconstructed light fields maintain  intensity variations across continuous horizontal and vertical angles.
-👆the average intensity per novel pixel changes smoothly, showing that our model interpolates well.
-These predicted intensities also exhibit 👆👆 a similar radial pattern to the results measured with professional equipment on the right.
 -->
 
 ---
